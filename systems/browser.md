@@ -2,7 +2,7 @@
 
 - Easy to install.
 - Easy to discover.
-- Asks the user for permissions.
+- Asks the user for high level permissions. (https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions)
 - Ability to improve the user's agency and security.
 - Ability to customise a page to a person's liking.
 - Ability to slightly tweak the browser's behaviour (eg. vertical tabs) depending on the browser.
@@ -11,7 +11,7 @@
 
 ## Cons
 
-- Can be modified without the user's consent. Legitimate extensions can turn malicious.
+- Can be modified without the user's consent, missing auditing/ visibility cpabilites. Legitimate extensions can turn malicious.
 - May do more than assumed/intended by asking for more permissions than it should.
 - Vague privacy-policies and handling of user data.
 - Ability to hide third-party code.
@@ -19,7 +19,10 @@
 - Gatekept by centralised extension stores.
 - Actions of an extension may be obscured.
 - No full control over the browsing experience, still subjected to the container and tabs model.
-
+- potentially huge performance impact
+- no fine grined, subscoped permissions
+- limited runtime permissions
+- very limited control over ad hoc/ surgical activation (usually either always on or enabled per tab)
 
 ## On the fence
 
