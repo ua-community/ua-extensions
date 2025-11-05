@@ -23,6 +23,8 @@
 - no fine grined, subscoped permissions
 - limited runtime permissions
 - very limited control over ad hoc/ surgical activation (usually either always on or enabled per tab)
+- no cross extension interop
+- no great features for more server/ local data centric usage
 
 ## On the fence
 
