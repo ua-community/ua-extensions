@@ -48,7 +48,7 @@ Some examples of extensions that cannot be built, or are hard to build:
 
 ## Threat models
 
-Malicious intent in order to gain access to a user's data, financial info, activities, etc. Done through the methods described above in the cons section.
+Malicious intent in order to gain access to a user's data, financial info, activities, etc. Done through the methods described above in the 'negatives' section.
 
 
 ## Use cases & numbers
