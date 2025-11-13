@@ -3,7 +3,7 @@
 The good, the bad and the ugly about extensions on mainstream browsers (Chrome, Safari, Firefox, etc).
 
 
-## Pros
+## Positives
 
 - Easy to install.
 - Easy to discover.
@@ -14,7 +14,7 @@ The good, the bad and the ugly about extensions on mainstream browsers (Chrome, 
 - Provides convenience.
 
 
-## Cons
+## Negatives
 
 - Can be modified without the user's consent, missing auditing/visibility capabilities. Legitimate extensions can turn malicious.
 - May do more than assumed/intended by asking for more permissions than it should.
@@ -31,14 +31,14 @@ The good, the bad and the ugly about extensions on mainstream browsers (Chrome, 
 - Does not enable tighter integrations with local-first or cloud data solutions.
 
 
-## Impediments
+## Examples
 
 Some examples of extensions that cannot be built, or are hard to build:
 
 - Run a HTTP server in an extension, eg. to load a generated web app.
 
 
-## On the fence
+## Impediments
 
 These may be positive or negative, depending on the way you look at it.
 
