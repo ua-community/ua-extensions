@@ -31,6 +31,13 @@ The good, the bad and the ugly about extension on mainstream browsers (Chrome, S
 - Does not enable tighter integrations with local-first or cloud data solutions.
 
 
+## Impediments
+
+Some examples of extensions that cannot be built, or are hard to build:
+
+- Run a HTTP server in an extension, eg. to load a generated web app.
+
+
 ## On the fence
 
 These may be positive or negative, depending on the way you look at it.
