@@ -1,6 +1,6 @@
 # Browser
 
-The good, the bad and the ugly about extension on mainstream browsers (Chrome, Safari, Firefox, etc).
+The good, the bad and the ugly about extensions on mainstream browsers (Chrome, Safari, Firefox, etc).
 
 
 ## Pros
