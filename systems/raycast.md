@@ -28,6 +28,7 @@ Extensibility analysis of the launcher called [Raycast](https://www.raycast.com)
 These may be positive or negative, depending on the way you look at it.
 
 - All extensions on the store go through a review process.
+- Extensions use web tech (React).
 
 
 ## Threat models
