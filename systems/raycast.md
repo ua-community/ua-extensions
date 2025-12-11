@@ -57,4 +57,4 @@ An [open-source](https://github.com/vicinaehq/vicinae) alternative with a curren
 
 Without extension compatibility:
 
-- [Kunkun](https://github.com/kunkunsh/kunkun)
+- [Kunkun](https://github.com/kunkunsh/kunkun): does feature a better security model! (similar permission model to Chrome extension)
