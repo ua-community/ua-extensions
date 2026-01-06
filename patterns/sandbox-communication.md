@@ -1,5 +1,3 @@
-## The Pattern
-
 We have a few parts that make up this pattern:
 
 1. Some kind of **context** the protocol is anchored to.
