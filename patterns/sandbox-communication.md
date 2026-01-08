@@ -60,6 +60,16 @@ But supposing we could easily listen for messages from the same context, would t
 
 
 
+## Composition
+
+A large portion of these protocols serve to pull apart the monolithic app or cloud-first paradigms. They mean to redefine what the web is, or at least a part of it. What is the overlap between these "definitions" of the web? Any materials or instruments shared by various proposals?
+
+Custom elements and web workers seem solid choices here. Though we can't create a set of web components that would work in all environments or protocols. What we can do is find the optimal balance to divide them, what the architecture is and how they communicate. Find abstractions that work on the most amount of environments while still keeping the performance and user agency of the software intact.
+
+For example, you can split up your custom elements in such a way that it allows easy usage in both Web Tiles and in a regular browser application. Logic and UI should be separate.
+
+
+
 ## Related links
 
 - [Custom elements manifest](https://github.com/webcomponents/custom-elements-manifest), similar to Web Tile manifests.
