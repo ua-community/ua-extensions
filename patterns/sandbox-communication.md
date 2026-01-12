@@ -6,7 +6,7 @@ We have a few parts that make up this pattern:
 
 This pattern recognises the following protocols/standards:
 
-- [Autonomous custom elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements)
+- [Autonomous custom elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements) (DOM)
 - [Matrix Widgets](https://matrix.org/blog/2017/08/23/introducing-matrix-widgets/)
 - [Mini Apps](https://miniapps.farcaster.xyz/docs/specification) (Farcaster)
 - [OpenFrames](https://www.openframes.xyz)
@@ -56,7 +56,7 @@ Perhaps a question we can ask ourselves here, what if every protocol in this lis
 
 One interesting option here is that we can set the [`targetOrigin`](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage#targetorigin) argument to `*`. Though MDN does warn us that in that case extensions can no longer discern the origin. Another option would be to listen to the messages from a given context. Annoyingly postMessage doesn't listen for messages from the same context. Though [extensions](https://github.com/niexia/postMessage-catcher/tree/62ca9d114f03d30c10870cb726200813a4451100) that deal with postMessage observing get around that by creating an iframe that does the observing.
 
-But supposing we could easily listen for messages from the same context, would that enable progressive enhancement? For example, instead of doing `window.makeWish()` directly we could listen for messages using `context.addEventListener('message')`, filter out the appropriate and then do whatever `window.makeWish()` does. In that scenario a Web Tile could be loaded in a regular browser, where `window.makeWish` does not exist, and there might instead be a browser extension which understands the data coming through the postMessage interface. Interop on the data format.
+But supposing we could easily listen for messages from the same context, would that enable progressive enhancement? For example, instead of doing `window.makeWish()` directly we could listen for messages using `context.addEventListener('message')`, filter out the appropriate messages and then do whatever `window.makeWish()` does. In that scenario a Web Tile could be loaded in a regular browser, where `window.makeWish` doesn't exist, and there might instead be a browser extension which understands the data coming through the postMessage interface. Interop on the data format.
 
 
 
@@ -66,7 +66,7 @@ A large portion of these protocols serve to pull apart the monolithic app or clo
 
 Custom elements and web workers seem solid choices here. Though we can't create a set of web components that would work in all environments or protocols. What we can do is find the optimal balance to divide them, what the architecture is and how they communicate. Find abstractions that work on the most amount of environments while still keeping the performance and user agency of the software intact.
 
-For example, you can split up your custom elements in such a way that it allows easy usage in both Web Tiles and in a regular browser application. Logic and UI should be separate.
+For example, you can split up your custom elements in such a way that it allows easy usage in both Web Tiles and in a regular browser application. Separate logic and UI.
 
 
 
