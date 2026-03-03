@@ -16,7 +16,7 @@ Everything is an extension in Peek, so these capabilities may not always apply, 
 
 ### Overlap with existing systems
 
-#### Web Browsers
+#### Web browsers
 
 - Open web pages in various web views/windows.
 - Search the web without going to the search engine's web page first, keeping the web search tool close.
@@ -24,6 +24,22 @@ Everything is an extension in Peek, so these capabilities may not always apply, 
 - Inspect the contents of a web page. Though Peek does this much better, regular browsers inspection tools are aimed at developers.
 - Modify the content of web views by writing user scripts (though this is not a core feature of web browsers, it is a core extension in Peek).
 - Make groups of web pages. This heavily varies between browsers.
+
+#### Launchers
+
+- Execute commands, trigger actions.
+- Window management.
+- Assign keyboard shortcuts to specific commands.
+- Open web pages.
+- Search the web without going to the search engine's web page first.
+- Manipulate data or content in the current context.
+- Setup a timer.
+
+#### Editors (Obsidian & Zed)
+
+- Peek can edit Markdown too!
+- Execute commands via a command palette.
+- Produce structured data based on main content and then searching through that collection of data.
 
 
 
