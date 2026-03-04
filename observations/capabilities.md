@@ -6,7 +6,7 @@ Here we compare the capabilities of various systems, how they relate to each oth
 
 ## Peek
 
-Everything is an extension in Peek, so these capabilities may not always apply, depending on which extensions are enabled.
+Everything is an extension in Peek, so these capabilities may not always apply, depending on which extensions are enabled. That said, we do focus on the core extensions that are built-in.
 
 - **Window manager for the web**: Arrange web views. Use keyboard shortcuts to bring them up or hide them.
 - **Workbench for the web**: Bring tools into view when needed (uncluttered work bench). Ability to chain tools (command chaining).
@@ -40,6 +40,35 @@ Everything is an extension in Peek, so these capabilities may not always apply, 
 - Peek can edit Markdown too!
 - Execute commands via a command palette.
 - Produce structured data based on main content and then searching through that collection of data.
+
+
+
+## Darc
+
+- Monitor how web pages & agents use various resources and the permissions they asked for plus the ones they act on.
+- Toggle extensions on a per web page basis.
+- Lock everything down by default to make sure every part of the browser, including all extensions, are cryptographically verified and only audited components are used.
+
+
+### Xenon
+
+Build on a secure sandboxed foundation, reusing the engine of a browser you've already installed.
+
+
+
+## Peeking in the Darc 🥷
+
+### Similar capabilities
+
+- Export & sync your data.
+- Navigate through a timeline of your browsing history.
+- Write CSS and JS scripts to modify web pages.
+
+
+### Differences
+
+- Peek tries to stay out of your way, invisible, fusing with your OS.
+- Darc focuses heavily on AI agents and security.
 
 
 
