@@ -15,14 +15,14 @@ A listing of what every project in the U&A community wants to see become a reali
 
 - Listen to your purchased audio and other audio sources from the web.
 - A workbench for your audio, your playlists and other derived data.
-- Malleable local-first software, enable and modify features and interfaces.
+- Malleable local-first software, toggle and modify features and interfaces.
 - Data agency.
 
 
 ## [Peek](https://tangled.org/burrito.space/peek)
 
 - Escape the capability prison.
-- Window manager and workbench for the web, close to invisible integration in the OS.
+- Window manager and workbench for the web, close to invisible integration with the OS.
 - Tweak and modify the web to fit one's needs.
 - Data agency.
 
