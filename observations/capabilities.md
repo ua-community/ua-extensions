@@ -55,7 +55,7 @@ Everything is an extension in Peek, so these capabilities may not always apply, 
 - Manage data entities produced by web pages and sync them with all of your devices.
 - Run docker containers right in the browser to host web applications and then use those apps. Load directly from a Github repo.
 - Explicitely hibernate a web view, or force it to load on start up.
-- Use an agent to native through the web.
+- Use an agent to navigate through the web.
 
 
 ### Overlap with existing systems
