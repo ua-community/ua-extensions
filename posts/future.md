@@ -1,0 +1,36 @@
+**What is the future of extensions and software on the web? Do we even need extensions provided through a store if we can generate them ourselves?**
+
+There is a slight problem with generating your own extensions; you still need the expertise, the domain knowledge, of what you're trying to build, and that takes time to accumulate. This is especially the case for the most popular extensions, in order of popularity: Adobe Acrobat, ad blockers, Grammarly, Meta Mask, password managers, etc. There is a notable exception, which would be [Dark Reader](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh). Maybe that's a sign we shouldn't need an extension for this.
+
+That said, [seeing](https://github.com/ua-community/ua-extensions/blob/main/systems/browser.md) that most people don't install extensions, you could argue that the marketplace approach could be replaced with a better system. Maybe that system is AI agents, maybe it's something else entirely.
+
+What if someone could converse with their software, the ability to ask for a feature or interface, would that change the game? A lot of browser extensions never see any [usage](https://github.com/ua-community/ua-extensions/blob/main/systems/browser.md#some-quotes-from-a-research-article) because people never come across them, they're overshadowed by the most popular extensions. It takes a lot of time to browse through everything that's in the store. If instead products or better put,  groups of people, provide agent skills; the agent could find the appropriate skill for you, bringing along the required domain knowledge.
+
+There is an issue with this as well though; LLMs are bullshitters, so how do you know if it's doing the right thing? A password manager or a wallet seem especially dangerous here, what if it decides to send your passwords or money to various places without your consent? You could instruct an agent as much as you want and there's still a chance, however small, that it does the wrong thing.
+
+That's where sandboxing and permissions come in. You can trust an agent acting as a password manager way more if it doesn't have network access. As the people from Tonk have [suggested](https://tonk.xyz/updates/the-source-of-truth-problem-is-getting-worse-with-agents), agents would benefit from a shared data substrate. The idea here is to store all your data in your browser's data repository and have that shared between all your devices. That way your password manager gets a place to store its passwords and other data for "free", though you probably want to pay for syncing to the cloud as an always-available backup.
+
+I think it's also a good question to ask how far we can go with pulling apart this idea of what a web browser is, or software in general for that matter. Could we stretch it out so much so that different software you can download are just different substrates on which you and agents can build?
+
+Anyhow, back to reality. We do still need a user interface layer integrating with web sites, for example, auto completing user logins or password generation. Luckily we have the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) which is also a substrate that can be manipulated. We basically need to add little snippets of HTML and Javascript into this environment. How we do that exactly depends on the platform we're building on, web browsers have extensions that use the [Manifest v3](https://developer.chrome.com/docs/extensions/reference/manifest#popup-with-permissions) format, other software may have their own extension system.
+
+Something else important that we haven't talked about is that this changes the entire life cycle of software. Software updates are a problematic part of the current vision of browser extensions, legitimate extensions can turn malicious because of automatic updates. That's a side effect of the marketplace, which can be replicated with the skills marketplace, so we have to be mindful to avoid that.
+
+Do we actually need automatic software updates? Not sure, I'd argue that it only matters for security. I think we managed fine before we had fast internet with software we had to upgrade manually? On the other hand, maybe our economic situation doesn't allow for this anymore? Everything is constantly in flux and complexity has increased significantly.
+
+It could be interesting to mix and match skills. We are no longer limited by what a company decides to provide. There are a lot of security details to figure out though! Another big reason that only a few very popular extensions are being installed is that this whole web ecosystem is rife with fraud and scams, AI agents will most likely be no different.
+
+To play devil's advocate, the current situation of LLMs does have me worried. We're putting a lot of capabilities and information in the hands of a few huge companies. Open models do exist but they are less capable and require decent hardware and know-how to run them; besides the baked-in LLMs that is, which are not capable at all. Community-ran models would be great here, but how do we easily discover and connect to them? [@chrisshank.com](https://bsky.app/profile/jakelazaroff.com/post/3mju4cau4nc2f) had the cool idea to have local libraries to host your PDS, we could do the same for agents.
+
+We should also research how well skills perform based on the model used. Where does it leave a person if their used model doesn't do well with the used skill? Seems a bit unrealistic to expect the creators of a skill to test it with a large variety of models.
+
+Where does that leave us? I think this relatable to what we're currently seeing with software. Yes, agents can generate software from scratch, but not software which is high quality. How do we bridge that gap? We provide building blocks for the agents so that they have less details to figure out. Keep in mind that there's a balance here that needs to be struck, a balance between ability to customise and complexity. Increasing the ability to customise lowers the size of the building block, but increases the amount of blocks, thus increasing the complexity of the system. When the complexity of the system increases we need a bigger context, a more capable model.
+
+Blocks can be swapped out, just like skills can be swapped out. What all this does have in common is the data. The data should be the starting point.
+
+Several projects in the [U&A community](https://userandagents.com/) are exploring parts of what we discussed here:
+- **Darc**: Sandboxing, strict permissions, give agents access to the website you're visiting.
+- **Peek**: Data substrate, extract all kinds of data from websites and extensions and have it synced.
+- **Tiles**: Local & secure AI agent communication.
+- **Syke**: Shared memory between AI agents.
+- **Diffuse**: Malleable software substrate and building blocks to build software.
