@@ -1,8 +1,8 @@
-**What is the future of extensions and software on the web? Do we even need extensions provided through a store if we can generate them ourselves?**
+**What is the future of extensions on the web? Do we even need extensions provided through a store if we can generate them ourselves?**
 
 There is a slight problem with generating your own extensions; you still need the expertise, the domain knowledge, of what you're trying to build, and that takes time to accumulate. This is especially the case for the most popular extensions, in order of popularity: Adobe Acrobat, ad blockers, Grammarly, Meta Mask, password managers, etc. There is a notable exception, which would be [Dark Reader](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh). Maybe that's a sign we shouldn't need an extension for this.
 
-If existing extensions were open source, you might be able to extract some information from the source. But most extensions are closed source so that doesn't help us. That's why some people are doing things like [this](https://github.com/levelsio/superlevels) where they create an extension template other people can use. It includes a bunch of functionality by default and can be customized. It's not exactly a user friendly solution though, you need to go to a Chrome specific page, enable developer mode and load the extension from the file system.
+If existing extensions were open source, you might be able to extract some information from the source. But most extensions are closed source so that doesn't help us. That's why some people are doing [extension templates](https://github.com/levelsio/superlevels) which other people can use, it includes a bunch of functionality by default and can be customized easily. It's not exactly a user friendly solution though, you need to go to a Chrome specific page, enable developer mode and load the extension from the file system.
 
 That said, [seeing](https://github.com/ua-community/ua-extensions/blob/main/systems/browser.md) that most people don't even install extensions at all, you could argue that the marketplace approach could be replaced with a better system. Maybe that system is AI agents, maybe it's something else entirely.
 
@@ -32,7 +32,7 @@ Building blocks can be swapped out, just like skills can be swapped out. What al
 
 Several projects in the [U&A community](https://userandagents.com/) are exploring parts of what we discussed here:
 - **[Darc](https://xe.dev/darc)**: Sandboxing, strict permissions, give agents access to the website you're visiting.
-- **[Peek](https://tangled.org/burrito.space/peek)**: Data substrate, extract all kinds of data from websites and extensions and have it synced.
+- **[Peek](https://tangled.org/burrito.space/peek)**: Data overlay, extract all kinds of data from websites and extensions and have it synced.
 - **[Tiles](https://www.tiles.run)**: Local & secure AI agent communication.
 - **[Syke](https://mysyke.com)**: Shared memory between AI agents.
 - **[Diffuse](https://elements.diffuse.sh)**: Malleable software substrate and building blocks to build software.
