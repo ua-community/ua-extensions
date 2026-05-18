@@ -33,6 +33,7 @@ Building blocks can be swapped out, just like skills can be swapped out. What al
 Several projects in the [U&A community](https://userandagents.com/) are exploring parts of what we discussed here:
 - **[Darc](https://xe.dev/darc)**: Sandboxing, strict permissions, give agents access to the website you're visiting.
 - **[Peek](https://tangled.org/burrito.space/peek)**: Data overlay, extract all kinds of data from websites and extensions and have it synced.
+- **[Coven](https://tangled.org/yzzxyz.roomy.chat/coven)**: Distributed AI models (split large models across various devices)
 - **[Tiles](https://www.tiles.run)**: Local & secure AI agent communication.
 - **[Syke](https://mysyke.com)**: Shared memory between AI agents.
 - **[Diffuse](https://elements.diffuse.sh)**: Malleable software substrate and building blocks to build software.
