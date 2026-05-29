@@ -15,6 +15,7 @@ Everything is an extension in Peek, so these capabilities may not always apply, 
 - **Workbench for the web**: Bring tools into view when needed (uncluttered work bench). Ability to chain tools (command chaining).
 - Execute commands provided by extensions using a "command executer" extension.
 - Manage your personal structured data produced by extensions and sync it with your other devices through the configured syncing algorithm.
+- Create standalone applications for web pages.
 
 
 ### Overlap with existing systems
@@ -44,6 +45,20 @@ Everything is an extension in Peek, so these capabilities may not always apply, 
 - Produce structured data based on main content and then searching through that collection of data.
 
 
+### Developer perspective
+
+> Peek uses the language of "features" (and, at the implementation level, "tiles") over "extensions"
+
+- Ability to create all kinds of interfaces and functionality on a blank canvas on top of your OS.
+- Define unique capabilities that other Peek features can benefit from as well.
+- Define custom URL schemes for resources that can be loaded using your feature.
+- Create multiple sandboxed windows.
+- Add settings to a shared settings screen.
+- Post messages in various pubsub topics that other features can subscribe to (with custom topics and several scopes).
+- Define commands for people to execute via the command palette.
+- Create "hidden" features without any interface, eg. to start a HTTP server.
+
+
 
 ## Darc
 
@@ -56,6 +71,7 @@ Everything is an extension in Peek, so these capabilities may not always apply, 
 - Run docker containers right in the browser to host web applications and then use those apps. Load directly from a Github repo.
 - Explicitely hibernate a web view, or force it to load on start up.
 - Use an agent to navigate through the web.
+- Use agent skills to modify an unlocked version of your browser.
 
 
 ### Overlap with existing systems
@@ -80,9 +96,16 @@ Everything is an extension in Peek, so these capabilities may not always apply, 
 - Produce structured data based on main content and then searching through that collection of data.
 
 
-### Xenon
+### Developer/Xenon perspective
 
-Build on a secure sandboxed foundation, reusing the engine of a browser you've already installed.
+- Store data on a unified data layer provided by Darc and have users sync that data between their devices
+- Build on a secure sandboxed foundation, reusing the engine of a browser you've already installed (if that engine supports IWAs).
+- Inherit capabilities from IWAs such as:
+  - Controlled frames: Inject custom scripts and styles into third-party sites
+  - Direct sockets: TCP/UDP connections (eg. do P2P things)
+  - Verify the integrity of your software (IWAs are cryptographically signed)
+  - Provide web applications that are not tied to a specific origin
+  - Create super apps, or a mutable system layer by utilising containers
 
 
 
